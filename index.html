@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>DadaHackthon Face Recognition(Based On Baidu AI)</title>
+</head>
+<body>
+	<div class="v-area">
+		<div class="v-s">
+			<video id="video">346457644</video>
+			<canvas id="canvas"></canvas>
+		</div>
+		<div class="v-t">
+			<div onclick="foldDiv(this)">
+				<label id='pc_log'>Registration</label>>
+				<div id="innner_log">
+					<input type="text" id="uid_p" placeholder="Account"/>
+					<input type="text" id="userInfo_p" placeholder="UserName"/>
+					<div>
+						<label id="logImg_p" onclick="register()">TakePhotoAndRegister</label>					
+					</div>
+				</div>
+			</div>
+			<div id="pc_camera" onclick="login()"
+				<span>Login</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/ajaxRequest.js"></script>	
+	<script type="text/javascript" src="js/faceRec.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/12.23 +'px';
+			loadCamera();
+		}		
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</body>
+</html>
